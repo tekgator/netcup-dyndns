@@ -1,0 +1,10 @@
+services:
+  netcup-dyndns:
+    image: netcup-dyndns
+    build:
+      context: ..
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    env_file:
+      - ../.env

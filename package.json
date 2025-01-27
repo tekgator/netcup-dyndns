@@ -1,0 +1,35 @@
+{
+    "name": "netcup-dyndns",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "",
+    "license": "MIT",
+    "description": "",
+    "type": "module",
+    "scripts": {
+        "dev:build": "tsc --build",
+        "dev:clean": "rimraf dist",
+        "dev:run": "tsc --build && node --env-file=.env dist/index.js",
+        "dev:lint": "eslint ./src/**/*.ts",
+        "dev:format": "prettier --write \"**/*.+(js|ts|json)\"",
+        "prod:build": "npm run dev:clean && tsc --project tsconfig.prod.json"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.17.0",
+        "@types/node": "^22.10.5",
+        "@typescript-eslint/eslint-plugin": "^8.19.1",
+        "@typescript-eslint/parser": "^8.19.1",
+        "eslint": "^9.17.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prettier": "^5.2.1",
+        "globals": "^15.14.0",
+        "rimraf": "^6.0.1",
+        "typescript": "^5.7.3",
+        "typescript-eslint": "^8.19.1"
+    },
+    "dependencies": {
+        "axios": "^1.7.9",
+        "ms": "^3.0.0-canary.1",
+        "winston": "^3.17.0"
+    }
+}

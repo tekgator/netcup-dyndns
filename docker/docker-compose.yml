@@ -1,0 +1,19 @@
+services:
+  netcup-dyndns:
+    image: tekgator/netcup-dyndns:latest
+    container_name: netcup-dyndns
+    restart: unless-stopped
+    environment:
+      # Customer ID can be found in the Netcup CC Panel (required)
+      CUSTOMER_ID: 123456
+
+      # API access information can be found in the Netcup CC Panel (required)
+      API_KEY: samplekey
+      API_PASSWORD: samplepassword
+
+      # Domain configuration: Provide only the zone name, e.g. sample.com
+      # or including its subdomains, comma seperated after the zone name
+      # (required, at least one domain is required)
+      DOMAIN1: sample1.com
+      DOMAIN2: sample2.com,sub1,sub2
+      DOMAIN3: sample3.com,*,@,sub1
