@@ -1,6 +1,7 @@
 import FritzBoxProvider from './fritz-box.provider.js';
 import IcanhazipProvider from './icanhazip.provider.js';
 import IdentMeProvider from './identme.provider.js';
+import IpifyProvider from './ipify.provider.js';
 import MyIpProvider from './my-ip.provider.js';
 import PublicIpProvider from './public-ip.interface.js';
 import RandomIpProvider from './random-ip.provider.js';
@@ -8,6 +9,7 @@ import SeeIpProvider from './seeip.provider.js';
 
 const publicIpProviders: {[key: string]: new () => PublicIpProvider} = {
     icanhazip: IcanhazipProvider,
+    ipify: IpifyProvider,
     identme: IdentMeProvider,
     myip: MyIpProvider,
     seeip: SeeIpProvider,
