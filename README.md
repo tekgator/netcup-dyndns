@@ -53,10 +53,10 @@ The goal of this tool is to provide an easy-to-use solution packaged as a Docker
   - [ipify](https://www.ipify.org/)
   - [icanhazip](https://icanhazip.com/)
   - [ident.me](https://www.ident.me/)
-  - [my-ip.io](https://www.my-ip.io/)
-  - [seeip.net](https://www.seeip.net/)
+  - [MyIP](https://www.my-ip.io/)
+  - [SeeIP](https://seeip.org/)
   - [AVM FRITZ!Box](https://www.avm.de/)
-  - Random IP generator (for testing and debugging purpose mostly)
+  - Random IP generator (mostly for testing and debugging purpose)
 - If multiple IP providers are configured a fallback will be used if one fails
 - more to come...
 
